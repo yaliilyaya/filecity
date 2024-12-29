@@ -3,11 +3,11 @@ version: '3'
 services:
   app:
     ports:
-      - 23180:80 #symfony server
-      - 23181:9001 #supervisord
+      - 25080:80 #symfony server
+      - 25081:9001 #supervisord
   db:
     ports:
-      - 23188:3306
+      - 25006:3306
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: developer
